@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometric Figures</title>
+    <link rel="stylesheet" href="geometric.css">
+    <title>Geometric Shapes</title>
 </head>
+
 <body>
-    <h1>Geometric Figures</h1>
+    <header>  
+        <h1>Geometric Shapes</h1>
+        <p>First JavaScript excercise</p>
+    </header>
+    <section>
+        <h2>Square</h2>
+        <form>
+            <label for="squareInput">How long is the side of the square?</label>
+            <input id="squareInput" type="number">
+            <button type="button" onclick="squarePerimeter()">
+                Calculate perimeter
+            </button>
+            <button type="button" onclick="squareArea()">
+                Calculate area
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Triangles</h2>
+        <form  class="tri">
+            <label for="side1">How long is the first side of the triangle?</label>
+            <input id="side1" type="number">
+            <label for="side2">How long is the second side of the triangle?</label>
+            <input id="side2" type="number">
+            <label for="base">How long is the base of the triangle?</label>
+            <input id="base" type="number">
+            <label for="height">How long is the height of the triangle?</label>
+            <input id="height" type="number">
+            <button type="button" onclick="trianglePerimeter()">
+                Calculate perimeter
+            </button>
+            <button type="button" onclick="triangleArea()">
+                Calculate area
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Circles</h2>
+        <form>
+            <label for="circleInput">Type the radius of the circle</label>
+            <input id="circleInput" type="number">
+            <button type="button" onclick="circlePerimeter()">
+                Calculate circumference
+            </button>
+            <button type="button" onclick="circleArea()">
+                Calculate area
+            </button>
+        </form>
+    </section>
+
     <script src="/geometric.js"></script>
 </body>
+
 </html>
