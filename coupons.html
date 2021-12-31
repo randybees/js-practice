@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form>
+            <label for="price">Product price</label>
+            <input type="number" id="price">
+            <label for="code">Insert your discount code</label>
+            <input type="text" id="code">
+            <button type="button" onclick="calculator()">Calculate!</button>
+            <p id="calculated"></p>
+        </form>
+        <p>Only valid codes are [get10, get15, get20]</p>
+    </section>
+
+    <script src="/coupons.js"></script>
+</body>
+</html>
